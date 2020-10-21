@@ -1,0 +1,18 @@
+.bg {
+    background-color: #5dd55d;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+
+
