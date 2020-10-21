@@ -13,7 +13,7 @@ class App extends Component {
       <div>
         <NavBar />
         <Local />
-        <Abonnement info={this.state} />
+        {/*<Abonnement info={this.state} />*/}
       </div>
     );
   }

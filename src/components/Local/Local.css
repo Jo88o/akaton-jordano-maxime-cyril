@@ -8,7 +8,7 @@
     background-color: #5dd55d;
     display: flex; 
     height: 500px;
-    font-family: 'Amatic SC', cursive;
+    
     justify-content: center;
 }
 
@@ -33,6 +33,10 @@
     font-family: 'Amatic SC', cursive;
 }
 
+.inputDiv2:hover{
+    background-color: #5dd55d;
+}
+
 .buttonDiv2{
     height: 200px;
     width: 200px;
@@ -41,18 +45,51 @@
     font-family: 'Amatic SC', cursive;
 }
 
-/* div 3 */
-.div3{
-    background-color: #4d79ff;
-    width: 900px;
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    border-radius: 2%;
+.buttonDiv2:hover{
+    color: white;
+    background-color: #5dd55dc7;
+    border: black solid 2px;
+    text-decoration: none;
 }
 
-.test{
-    background-color: red;
-    height: 50px;
-    width: 60px;
+/* div 3 */
+.div3{
+    background-color: #4d7aff;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border-radius: 2%;
+    flex-direction: column;
+}
+
+.nvlDiv{
+    background-color: #5dd55db6;
+    height: 70px;
+    width: 800px;
+    font-size: 30px;
+    border-radius: 20px;
+    margin: 5px;
+    display: flex; 
+    align-items: center; 
+}
+
+.nvButton{
+    height: 20px;
+    background-image: url('/img/trash-png-image_1491040.jpg');
+    background-position: center;
+    background-size: cover;
+    /* margin-left: 650px; */
+    justify-content: flex-end;
+    margin-bottom: 60px;
+    border-radius: 100%;
+}
+
+.nvButton:hover{
+    border: solid 2px #4d7aff;
+}
+
+.nvP{
+    margin-left: 20px;
+    width: 90%;
 }
