@@ -1,0 +1,58 @@
+/* générale */
+.h1{
+    text-decoration: underline;
+}
+
+/* div principale */
+.div1{
+    background-color: #5dd55d;
+    display: flex; 
+    height: 500px;
+    font-family: 'Amatic SC', cursive;
+    justify-content: center;
+}
+
+/* div 2 */
+.div2{
+    width: 500px;
+    display: flex;
+    background-color:  #4d79ff;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Amatic SC', cursive;
+    margin: 10px;
+    border-radius: 2%;
+}
+
+.inputDiv2{
+    height: 50px;
+    width: 300px;
+    font-size: 30px;
+    border-radius: 5%;
+    font-family: 'Amatic SC', cursive;
+}
+
+.buttonDiv2{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+}
+
+/* div 3 */
+.div3{
+    background-color: #4d79ff;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 2%;
+}
+
+.test{
+    background-color: red;
+    height: 50px;
+    width: 60px;
+}
