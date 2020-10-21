@@ -33,8 +33,8 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <Local />
-        {/* <Abonnement info={this.state.abo} submit={(e) => this.submit(e)} temp={this.subInfo} /> */}
+        <Local info={this.state.abo} />
+        <Abonnement info={this.state.abo} submit={(e) => this.submit(e)} temp={this.subInfo} />
       </div>
     );
   }

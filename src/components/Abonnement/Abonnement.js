@@ -16,7 +16,6 @@ class Abonnement extends Component {
     render() {
         return (
             <div>
-                {this.state.info.mail}
                 {this.props.info.subbed &&
                     <div className="abo">
                         <div className="diag" />
