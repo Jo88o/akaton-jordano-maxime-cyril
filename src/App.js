@@ -6,14 +6,35 @@ import "./App.css"
 
 class App extends Component {
   state = {
-    abo: false
+    abo: {
+      subbed: false,
+      mail: "",
+      mdp: "",
+      durée: ""
+    }
+  }
+  subInfo = {
+    mail: "email",
+    mdp: "mdp",
+    durée: "type"
+  }
+  submit(e) {
+    e.preventDefault();
+    let copie = this.state.abo
+    if (copie.subbed) {
+      copie.subbed = !copie.subbed
+    }
+    else {
+      copie.subbed = !copie.subbed
+    }
+    this.setState(copie)
   }
   render() {
     return (
       <div>
         <NavBar />
         <Local />
-        <Abonnement info={this.state} />
+        {/* <Abonnement info={this.state.abo} submit={(e) => this.submit(e)} temp={this.subInfo} /> */}
       </div>
     );
   }
