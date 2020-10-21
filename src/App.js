@@ -1,6 +1,4 @@
 import NavBar from "./components/NavBar/NavBar"
-import Local from "./components/Local/Local"
-import Abonnement from "./components/Abonnement/Abonnement"
 import React, { Component } from 'react';
 import "./App.css"
 
@@ -11,13 +9,11 @@ class App extends Component {
       mail: "",
       mdp: "",
       durée: ""
-    }
+    },
+    currentPage: "local"
   }
-  subInfo = {
-    mail: "email",
-    mdp: "mdp",
-    durée: "type"
-  }
+
+  // Abo
   submit(e) {
     e.preventDefault();
     let copie = this.state.abo
@@ -29,12 +25,30 @@ class App extends Component {
     }
     this.setState(copie)
   }
+  handleChangeMail = (e) => {
+    let sub = this.state.abo
+    if (e.target.type == "email") {
+      sub.mail = e.target.value
+    }
+    else if (e.target.type == "password") {
+      sub.mdp = e.target.value
+    }
+    else if (e.target.id == "durée") {
+      sub.durée = e.target.value
+    }
+    this.setState(sub)
+  }
+  // Nav
+  nav(str) {
+    this.setState({
+      currentPage: str
+    })
+  }
+
   render() {
     return (
       <div>
-        <NavBar />
-        {/* <Local /> */}
-        <Abonnement info={this.state.abo} submit={(e) => this.submit(e)} temp={this.subInfo} />
+        <NavBar currentPage={this.state.currentPage} nav={(str) => this.nav(str)} info={this.state.abo} submit={(e) => this.submit(e)} handleChangeMail={(e) => this.handleChangeMail(e)} />
       </div>
     );
   }

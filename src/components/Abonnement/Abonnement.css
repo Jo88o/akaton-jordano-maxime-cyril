@@ -71,3 +71,12 @@
     margin: 0;
     font-size: 30px;
 }
+
+.perso{
+    flex-direction: column; 
+    height: 50%;
+    justify-content: center;
+}
+.perso>p{
+    width: 100% !important;
+}
