@@ -19,7 +19,7 @@ class NavBar extends Component {
                     </ul>
                 </nav>
                 {this.props.currentPage === "local" &&
-                    <Local />
+                    <Local info={this.props.info}/>
                 }
                 {this.props.currentPage === "abonnement" &&
                     <Abonnement info={this.props.info} submit={(e) => this.props.submit(e)} handleChangeMail={this.props.handleChangeMail} />
